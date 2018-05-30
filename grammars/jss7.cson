@@ -1,0 +1,336 @@
+'name': 'jss7'
+'fileTypes': [
+  'jss7',
+]
+'patterns': [
+  {
+    'match': '(sctp server)\\s+(create)\\s+(\\S+)\\s+(\\S+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'string'
+      '5':
+        'name': 'constant.numeric'
+  },
+  {
+    'match': '(sctp server)\\s+(start)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+  },
+  {
+    'match': '(sctp association)\\s+(create)\\s+(\\S+)\\s+(CLIENT)\\s+(\\S+)\\s+(\\d+)\\s+(\\S+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'constant.other.symbol'
+      '5':
+        'name': 'string'
+      '6':
+        'name': 'constant.numeric'
+      '7':
+        'name': 'string'
+      '8':
+        'name': 'constant.numeric'
+  },
+  {
+    'match': '(sctp association)\\s+(create)\\s+(\\S+)\\s+(SERVER)\\s+(\\S+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'constant.other.symbol'
+      '5':
+        'name': 'string'
+      '6':
+        'name': 'constant.numeric'
+  },
+  {
+    'match': '(m3ua asp)\\s+(create)\\s+(\\S+)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'string'
+  },
+  {
+    'match': '(m3ua asp)\\s+(start)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+  },
+  {
+    'match': '(m3ua as)\\s+(create)\\s+(\\S+)\\s+(AS|SGW|IPSP)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(m3ua as)\\s+(add)\\s+(\\S+)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'string'
+  },
+  {
+    'match': '(m3ua route)\\s+(add)\\s+(\\S+)\\s+(\\d+)\\s+(\\d+)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'string'
+      '5':
+        'name': 'constant.numeric'
+      '6':
+        'name': 'string.other.link'
+  },
+  {
+    'match': '(sccp)\\s+(set)\\s+(\\S+)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(sccp sap)\\s+(create)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'constant.numeric'
+      '4':
+        'name': 'constant.numeric'
+      '5':
+        'name': 'variable'
+      '6':
+        'name': 'string'
+  },
+  {
+    'match': '(sccp dest)\\s+(create)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'constant.numeric'
+      '4':
+        'name': 'constant.numeric'
+      '5':
+        'name': 'string'
+      '6':
+        'name': 'string'
+      '7':
+        'name': 'variable'
+      '8':
+        'name': 'variable'
+      '9':
+        'name': 'variable'
+  },
+  {
+    'match': '(sccp rsp)\\s+(create)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'constant.numeric'
+      '4':
+        'name': 'variable'
+      '5':
+        'name': 'string'
+      '6':
+        'name': 'string'
+  },
+  {
+    'match': '(sccp rss)\\s+(create)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'constant.numeric'
+      '4':
+        'name': 'variable'
+      '5':
+        'name': 'string'
+      '6':
+        'name': 'string'
+  },
+  {
+    'match': '(sccp address)\\s+(create)\\s+(\\d+)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'constant.numeric'
+  },
+  {
+    'match': '(sccp rule)\\s+(create)\\s+(\\d+)\\s+(-|/|K|R)\\s+(\\d+)\\s+(.+)\\s+(solitary|dominant|loadshared|broadcast)\\s+(\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'variable'
+      '4':
+        'name': 'constant.other.symbol'
+      '5':
+        'name': 'constant.numeric'
+      '7':
+        'name': 'constant.other.symbol'
+      '8':
+        'name': 'string'
+  },
+  {
+    'match': '(ussd)\\s+(set)\\s+(\\S+)',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(ussd scrule)\\s+(create)\\s+(\\S+)\\s+(\\S+)(\\s+\\S+)?(\\s+\\S+)?',
+    'captures':
+      '1':
+        'name': 'keyword.control.sctp.association'
+      '2':
+        'name': 'keyword.other.special-method'
+      '3':
+        'name': 'constant.numeric'
+      '4':
+        'name': 'variable'
+      '5':
+        'name': 'string'
+      '6':
+        'name': 'constant.other.symbol'
+  },
+
+  {
+    'match': '(origination-type) (localOriginated|remoteOriginated)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+      '2':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(sockettype) (SCTP|TCP)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+      '2':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(traffic-mode) (override|loadsharing|loadshare|broadcast)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+      '2':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(ipspType) (client|server)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+      '2':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(mode) (SE|DE)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+      '2':
+        'name': 'constant.other.symbol'
+  },
+  {
+    'match': '(network-appearance) (\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+  },
+  {
+    'match': '(rc) (\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+  },
+  {
+    'match': '(backup-addressid) (\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+  },
+  {
+    'match': '(newcgparty-addressid) (\\d+)',
+    'captures':
+      '1':
+        'name': 'keyword.other.special-method'
+  },
+  {
+    'match': '^#.*$',
+    'name': 'comment'
+  }
+]
+'scopeName': 'source.dockerfile'

@@ -1,0 +1,28 @@
+sctp server create serv1 127.0.0.1 8012 sockettype SCTP
+sctp server start serv1
+sctp association create ass1 SERVER serv1 127.0.0.1 8011 sockettype SCTP
+
+m3ua as create as1 IPSP mode SE ipspType server rc 101 traffic-mode loadsharing network-appearance 102
+m3ua asp create asp1 ass1
+m3ua as add as1 asp1
+m3ua asp start asp1
+m3ua route add as1 1 2 3
+
+sccp sap create 1 1 2 2
+sccp dest create 1 1 1 1 0 255 255
+sccp address create 1 82 1 8 0 1 4 000
+sccp address create 2 82 2 8 0 1 4 000
+sccp rule create 1 K 82 0 8 0 1 4 * solitary 1 origination-type localOriginated
+sccp rule create 2 K 82 0 8 0 1 4 * solitary 2 origination-type remoteOriginated
+sccp rsp create 1 1 0 0
+sccp rss create 1 1 8 0
+
+ussd set dialogtimeout 25000
+ussd set ussdgt 923330053058
+ussd set ussdssn 8
+ussd set hlrssn 6
+ussd set mscssn 8
+ussd set maxmapv 3
+
+ussd scrule create *519# http://127.0.0.1:8080/ussddemo/test true HTTP
+ussd scrule create *518# http://127.0.0.1:5080 true SIP

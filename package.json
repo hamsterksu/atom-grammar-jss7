@@ -1,0 +1,12 @@
+{
+  "name": "language-jss7",
+  "version": "0.0.1",
+  "private": false,
+  "description": "jSS7 syntax highlighting",
+  "repository": "https://github.com/jagregory/language-docker",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
