@@ -8,11 +8,11 @@ Copy package to atom packages directory
 
 ## Syntax support
 
-this plugin supports most commands from supported list
+this plugin supports most commands of CLI tool - [jss7 user guide](https://www.restcomm.com/docs/core/ss7/SS7_Stack_User_Guide.html)
 
 ## Supported file extension
 
-Currently it support `.jss7` only
+Currently it supportы `.jss7` only
 
 You can use package [file-types](https://atom.io/packages/file-types) with this in you `config.cson` to enable it.
 
